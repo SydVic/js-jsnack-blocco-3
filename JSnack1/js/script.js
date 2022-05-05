@@ -14,9 +14,15 @@ if (firstArray.length < secondArray.length) {
 console.log("shortestArray", shortestArray);
     // pushare elementi nell'array più corto
     // fino a che il "controllo" ci dice che hanno la stessa lunghezza
-do {
+    
+// meglio ciclo while e basta e non do while perchè do while viene eseguito almeno una volta anche se sono della stessa lunghezza sin dall'inizio
+while (shortestArray.length !== secondArray.length) {
     const newArrayElement = Math.floor(Math.random() * 100) + 1;
     shortestArray.push(newArrayElement);
-} while (shortestArray.length != secondArray.length);
-
+}
 console.log("shortestArray", shortestArray);
+    
+// do {
+//     const newArrayElement = Math.floor(Math.random() * 100) + 1;
+//     shortestArray.push(newArrayElement);
+// } while (shortestArray.length !== secondArray.length);

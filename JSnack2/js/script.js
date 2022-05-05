@@ -18,3 +18,17 @@ do {
 
 console.log("originalArray" ,originalArray);
 console.log("NumbersSum" ,NumbersSum); 
+
+// anche qui era meglio il while
+
+/* CORREZIONE */
+// const userArray = [];
+// let sum = 0;
+
+// while ( sum < 50 ) {
+//     const userNumber = parseInt(prompt("Dimmi un numero"));
+//     userArray.push(userNumber);
+//     if ( sum < 50 ) {
+//         sum += userNumber;
+//     }
+// }
